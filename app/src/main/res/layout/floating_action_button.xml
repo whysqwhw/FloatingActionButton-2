@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/fab"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher">
+
+    <RelativeLayout
+        android:id="@+id/fabActionBgd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaffcc00"
+        android:visibility="invisible"
+        android:orientation="vertical">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fabContentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:paddingBottom="60dp">
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/fabIconBgd"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/fabIcon"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/fabIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+</RelativeLayout>
