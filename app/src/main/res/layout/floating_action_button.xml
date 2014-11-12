@@ -24,6 +24,7 @@
         android:layout_alignParentRight="true"
         android:visibility="invisible"
         android:orientation="vertical"
+        android:gravity="right"
         android:paddingBottom="60dp">
 
     </LinearLayout>

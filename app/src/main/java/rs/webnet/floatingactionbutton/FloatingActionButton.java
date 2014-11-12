@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 
 /**
  * Created by Kursulla on 11/11/14.
+ *
  */
 public class FloatingActionButton extends RelativeLayout {
 
@@ -99,6 +100,9 @@ public class FloatingActionButton extends RelativeLayout {
         });
     }
 
+    /**
+     * Open FAB content
+     */
     public void open() {
         opened = true;
         fabActionBgd.setVisibility(VISIBLE);
@@ -113,6 +117,9 @@ public class FloatingActionButton extends RelativeLayout {
         }
     }
 
+    /**
+     * Close FAB content
+     */
     public void close() {
         opened = false;
 
@@ -177,6 +184,10 @@ public class FloatingActionButton extends RelativeLayout {
         });
     }
 
+    /**
+     * Add any View item you want to FAB.
+     * @param view Any View you want to have there
+     */
     public void addItem(View view) {
         view.animate().setDuration(animationSpeed + 10).translationY(+screenHeight + view.getHeight()).start();
         fabContentContainer.addView(view);
@@ -186,15 +197,25 @@ public class FloatingActionButton extends RelativeLayout {
         return animationSpeed;
     }
 
+    /**
+     * Set speed of animation.
+     *
+     * @param animationSpeed
+     */
     public void setAnimationSpeed(int animationSpeed) {
         this.animationSpeed = animationSpeed;
     }
 
+    /**
+     * Check is FAB content already opened
+     *
+     * @return
+     */
     public boolean isOpened() {
         return opened;
     }
 
-    public void setOpened(boolean opened) {
+    private void setOpened(boolean opened) {
         this.opened = opened;
     }
 
@@ -202,6 +223,11 @@ public class FloatingActionButton extends RelativeLayout {
         return dimmedBackgroundColor;
     }
 
+    /**
+     * Set background of FAB content.
+     *
+     * @param dimmedBackgroundColor
+     */
     public void setDimmedBackgroundColor(String dimmedBackgroundColor) {
         this.dimmedBackgroundColor = dimmedBackgroundColor;
         fabActionBgd.setBackgroundColor(Color.parseColor(this.dimmedBackgroundColor));
@@ -211,6 +237,10 @@ public class FloatingActionButton extends RelativeLayout {
         return iconClosed;
     }
 
+    /**
+     * Set icon that you would like to have on FAB button while it is closed (inactive)
+     * @param iconClosed
+     */
     public void setIconClosed(int iconClosed) {
         this.iconClosed = iconClosed;
         fabIcon.setImageResource(this.iconClosed);
@@ -219,7 +249,10 @@ public class FloatingActionButton extends RelativeLayout {
     public int getIconOpened() {
         return iconOpened;
     }
-
+    /**
+     * Set icon that you would like to have on FAB button while it is opened (active)
+     * @param iconClosed
+     */
     public void setIconOpened(int iconOpened) {
         this.iconOpened = iconOpened;
     }
@@ -228,6 +261,10 @@ public class FloatingActionButton extends RelativeLayout {
         return buttonBackground;
     }
 
+    /**
+     * Set background that you would like to have on FAB button
+     * @param buttonBackground
+     */
     public void setButtonBackground(int buttonBackground) {
         this.buttonBackground = buttonBackground;
         fabIconBgd.setImageResource(buttonBackground);
@@ -237,6 +274,10 @@ public class FloatingActionButton extends RelativeLayout {
         return rotationAngle;
     }
 
+    /**
+     * Set rotation angle of icon that will be performed in animation. For better transition effect between closed and opened icons, keep this angle big enough.
+     * @param rotationAngle
+     */
     public void setRotationAngle(int rotationAngle) {
         this.rotationAngle = rotationAngle;
     }

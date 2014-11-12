@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 
         FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
 
-        fab.setDimmedBackgroundColor("#99FFFFFF");
+        fab.setDimmedBackgroundColor("#ddFFFFFF");
         fab.setIconOpened(R.drawable.ic_fab_opened);
         fab.setIconClosed(R.drawable.ic_fab_closed);
         fab.setButtonBackground(R.drawable.ic_fab_bgd_opened);

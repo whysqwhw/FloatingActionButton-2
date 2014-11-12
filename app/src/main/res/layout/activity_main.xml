@@ -4,10 +4,13 @@
                 android:layout_height="match_parent"
                 tools:context=".MainActivity">
 
+
+
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sem lectus. Donec quam leo, fermentum accumsan pellentesque vitae, accumsan sit amet lorem. Sed non lobortis purus. Donec pellentesque orci vitae tortor molestie vulputate. Morbi sed ligula consequat, lobortis ipsum id, tempus elit. Sed orci lorem, rhoncus et sagittis lacinia, molestie non orci. Donec odio nulla, convallis sed ex sit amet, vulputate blandit arcu. Nam non velit fringilla, feugiat nunc nec, ullamcorper sem. Integer id aliquet nisl. Sed ligula mauris, venenatis eu felis sit amet, tempor tincidunt mauris.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis sem lectus. Donec quam leo, fermentum accumsan pellentesque vitae, accumsan sit amet lorem. Sed non lobortis purus. Donec pellentesque orci vitae tortor molestie vulputate. Morbi sed ligula consequat, lobortis ipsum id, tempus elit. Sed orci lorem, rhoncus et sagittis lacinia, molestie non orci. Donec odio nulla, convallis sed ex sit amet, vulputate blandit arcu. Nam non velit fringilla, feugiat nunc nec, ullamcorper sem. Integer id aliquet nisl. Sed ligula mauris, venenatis eu felis sit amet, tempor tincidunt mauris.\n\n"/>
 
 
 
